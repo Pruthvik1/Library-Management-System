@@ -1,0 +1,89 @@
+2022-06-29 10:23:55 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'my_app\'@\'localhost\' (using password: YES)',
+)
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:87
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver.php on line 125
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver.php:125
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:87
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
+2022-06-29 10:25:25 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lms.reocrds' doesn't exist in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 160
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lms.reocrds' doesn't exist in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:328
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:331
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:158
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
+2022-07-02 04:47:33 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lms.reocrds' doesn't exist in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 160
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lms.reocrds' doesn't exist in C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:328
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Connection.php:331
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:158
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:118
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\ORM\Table.php:513
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:111
+- C:\wamp64\www\lms\vendor\cakephp\bake\src\Command\ModelCommand.php:94
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\BaseCommand.php:190
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- C:\wamp64\www\lms\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- C:\wamp64\www\lms\bin\cake.php:12
+
